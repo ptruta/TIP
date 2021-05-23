@@ -1,0 +1,6 @@
+digraph CFG{entry1_1[label="Function equal entry\nMap()"]
+exit1_1[label="Function equal exit\nMap()"]
+real5_2[label="[Stmt] return (a == b);[2:5]\nMap()"]
+entry1_1 -> real5_2[label=""]
+real5_2 -> exit1_1[label=""]
+}

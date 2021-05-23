@@ -1,0 +1,29 @@
+map(l,f,z): (⭡μx1.⭡x1,(int) -> int,int) -> int
+{
+var r: int;
+if ((l == null)) {
+r = z;
+} else {
+r = f(map((*l),f,z));
+}
+return r;
+}
+
+foo(i): (int) -> int
+{
+return (i + 1);
+}
+
+main(): () -> int
+{
+var h: ⭡μx1.⭡x1,t: μx1.⭡x1,n: int;
+t = null;
+n = 42;
+while ((n > 0)) {
+n = (n - 1);
+h = alloc null;
+*h = t;
+t = h;
+}
+return map(h,foo,0);
+}

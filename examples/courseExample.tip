@@ -1,0 +1,10 @@
+main(){
+var a,b;
+var c;
+c=-43;
+a=42;
+b=a+input;
+a=a-b+c;
+c=a/c;
+return 1;
+}
